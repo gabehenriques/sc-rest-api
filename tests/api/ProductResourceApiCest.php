@@ -7,6 +7,7 @@ class ProductResourceApiCest
 
     public function getAllProducts(ApiTester $I)
     {
+        //Had no time to put this together....
     }
 
 
