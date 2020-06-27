@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\Product;
+use App\Category;
 
 class ProductsTableSeeder extends Seeder
 {
@@ -25,6 +26,10 @@ class ProductsTableSeeder extends Seeder
               'name' => $product->name,
               'sku' => $product->sku,
               'price' => $product->price,
+              'category_id' => Category::where(
+                  'title',
+                  $product->category
+              )->first()->id
             ));
         }
     }
