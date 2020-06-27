@@ -12,8 +12,6 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-        Category::truncate();
-
         $jsonData = File::get("database/data/products.json");
 
         $data = json_decode($jsonData);

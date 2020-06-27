@@ -13,8 +13,6 @@ class ProductsTableSeeder extends Seeder
      */
     public function run()
     {
-        Product::truncate();
-
         $jsonData = File::get("database/data/products.json");
 
         $data = json_decode($jsonData);
