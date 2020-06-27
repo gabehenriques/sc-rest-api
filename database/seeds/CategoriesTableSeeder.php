@@ -22,7 +22,7 @@ class CategoriesTableSeeder extends Seeder
 
         foreach ($products as $product) {
             Category::create(array(
-            'title' => $product->category,
+            'name' => $product->category,
           ));
         }
     }
