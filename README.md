@@ -44,7 +44,7 @@ Start the local development server
 
 ## Testing
 
-    Run Codeception
+Run Codeception
 
         php vendor/bin/codecept run
 
