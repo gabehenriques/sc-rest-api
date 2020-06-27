@@ -27,7 +27,7 @@ class ProductsTableSeeder extends Seeder
               'sku' => $product->sku,
               'price' => $product->price,
               'category_id' => Category::where(
-                  'title',
+                  'name',
                   $product->category
               )->first()->id
             ));
