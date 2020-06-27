@@ -18,6 +18,11 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
+
+Route::get('categories', 'CategoryController@index');
+Route::get('categories/{id}', 'CategoryController@show');
+
+
 Route::get('products', 'ProductController@index');
 Route::get('products/{product}', 'ProductController@show');
 Route::post('products', 'ProductController@store');
