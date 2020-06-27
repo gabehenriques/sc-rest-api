@@ -46,7 +46,8 @@ Start the local development server
 
 Run Codeception
 
-        php vendor/bin/codecept run
+    php vendor/bin/codecept build
+    php vendor/bin/codecept run
 
 ## HTTP Methods
 
