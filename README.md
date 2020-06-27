@@ -48,22 +48,24 @@ Start the local development server
 
         php vendor/bin/codecept run
 
-### List all products
+## HTTP Methods
+
+#### List all products
 
 ```console
-curl -X GET http://localhost:8001/api/products
+curl -X GET http://localhost:8000/api/products
 ```
 
-### Retrieve a single product
+#### Retrieve a single product
 
 ```console
-curl -X GET http://localhost:8001/api/products/{id}
+curl -X GET http://localhost:8000/api/products/{id}
 ```
 
-### Create product
+#### Create product
 
 ```console
-curl -X POST http://localhost:8001/api/products \
+curl -X POST http://localhost:8000/api/products \
  -H "Accept: application/json" \
  -H "Content-Type: application/json" \
  -d '{
@@ -74,10 +76,10 @@ curl -X POST http://localhost:8001/api/products \
  }'
 ```
 
-### Update product
+#### Update product
 
 ```console
-curl -X PUT http://localhost:8001/api/products/{id} \
+curl -X PUT http://localhost:8000/api/products/{id} \
  -H "Accept: application/json" \
  -H "Content-Type: application/json" \
  -d '{
@@ -85,9 +87,16 @@ curl -X PUT http://localhost:8001/api/products/{id} \
   }'
 ```
 
-### Delete product
+#### Delete product
 
 ```console
-curl -X DELETE http://localhost:8001/api/products/{id}
+curl -X DELETE http://localhost:8000/api/products/{id}
+
+```
+
+#### List all categories
+
+```console
+curl -X GET http://localhost:8000/api/categories
 
 ```
