@@ -17,6 +17,11 @@ class ProductController extends Controller
         return Product::find($id);
     }
 
+    public function showCategories($id)
+    {
+        return Product::find($id)->category;
+    }
+
     public function store(Request $request)
     {
         return Product::create($request->all());

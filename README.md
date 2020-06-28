@@ -98,9 +98,9 @@ curl -X DELETE http://localhost:8000/api/products/{id}
 
 ```
 
-#### List all categories
+#### List product categories
 
 ```console
-curl -X GET http://localhost:8000/api/categories
+curl -X GET http://localhost:8000/api/products/{id}/categories
 
 ```

@@ -19,12 +19,11 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::get('categories', 'CategoryController@index');
-Route::get('categories/{id}', 'CategoryController@show');
 
 
 Route::get('products', 'ProductController@index');
 Route::get('products/{product}', 'ProductController@show');
+Route::get('products/{id}/categories', 'ProductController@showCategories');
 Route::post('products', 'ProductController@store');
 Route::put('products/{product}', 'ProductController@update');
 Route::delete('products/{product}', 'ProductController@delete');
