@@ -84,8 +84,11 @@ curl -X PUT http://localhost:8000/api/products/{id} \
  -H "Accept: application/json" \
  -H "Content-Type: application/json" \
  -d '{
-    "price": Float
-  }'
+        "name": String,
+        "sku": String,
+        "price": Float,
+        "category_id": Integer
+ }'
 ```
 
 #### Delete product
