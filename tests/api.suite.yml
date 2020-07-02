@@ -1,10 +1,23 @@
 class_name: ApiTester
 modules:
-  enabled:
-    - REST:
-        url: /api/
-        depends: Laravel5
-    - \Helper\Api
   config:
+    Db:
+      cleanup: true # reload dump between tests
+  enabled:
+    - Helper\Api
+    - Asserts
+    - REST:
+        depends: Laravel5
     - Laravel5:
+        cleanup: true
         environment_file: .env.testing
+# class_name: ApiTester
+# modules:
+#     enabled:
+#         - REST:
+#             url: /api/v1
+#             depends: Laravel5
+#         - \Helper\Api
+#     config:
+#         - Laravel5:
+#             environment_file: .env.testing
